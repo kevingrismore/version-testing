@@ -16,18 +16,7 @@ push: null
 pull:
 - prefect.deployments.steps.git_clone:
     repository: https://github.com/kevingrismore/version-testing.git
-    branch: main
-- prefect.deployments.steps.run_shell_script:
-    id: ls
-    script: ls
-    stream_output: true
-- prefect.deployments.steps.set_working_directory:
-    id: set-working-directory
-    directory: version-testing
-- prefect.deployments.steps.run_shell_script:
-    id: git-checkout-commit
-    script: git checkout {{ $GITHUB_SHA }}
-    stream_output: false
+    branch: {{ $GITHUB_SHA }}
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
