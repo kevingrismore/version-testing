@@ -30,5 +30,5 @@ deployments:
   work_pool:
     name: we
     work_queue_name: null
-    job_variables: {"env": {"test": "test"}, "pip_packages": ["git+https://github.com/prefecthq/prefect.git@git-clone-commit"]}
+    job_variables: {"pip_packages": ["git+https://github.com/prefecthq/prefect.git@git-clone-commit"]}
   schedules: []
