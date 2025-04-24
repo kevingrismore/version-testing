@@ -19,7 +19,7 @@ pull:
     branch: main
 - prefect.deployments.steps.set_working_directory:
     id: set-working-directory
-    working_directory: version-testing-main
+    directory: version-testing-main
 - prefect.deployments.steps.run_shell_script:
     id: git-checkout-commit
     script: git checkout {{ $GITHUB_SHA }}
