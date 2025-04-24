@@ -32,4 +32,4 @@ deployments:
     work_queue_name: null
     job_variables: {}
   schedules: []
-  version_type: vcs:git
+  version_type: vcs:github
