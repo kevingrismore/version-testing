@@ -36,4 +36,3 @@ deployments:
     work_queue_name: null
     job_variables: {"env": {"test": "test"}}
   schedules: []
-  version_type: vcs:github
