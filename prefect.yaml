@@ -19,7 +19,9 @@ pull:
     branch: main
 - prefect.deployments.steps.run_shell_script:
     id: git-checkout-commit
-    script: git checkout {{ $GITHUB_SHA }}
+    script: |
+      cd version-testing-main
+      git checkout {{ $GITHUB_SHA }}
     stream_output: false
 
 # the deployments section allows you to provide configuration for deploying flows
