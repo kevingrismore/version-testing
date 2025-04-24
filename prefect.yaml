@@ -30,6 +30,6 @@ deployments:
   work_pool:
     name: managed
     work_queue_name: null
-    job_variables: {}
+    job_variables: {"env": {"test": "test"}}
   schedules: []
   version_type: vcs:github
