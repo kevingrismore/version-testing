@@ -15,7 +15,7 @@ push: null
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
 - prefect.deployments.steps.git_clone:
-    repository: git@github.com:kevingrismore/version-testing.git
+    repository: https://github.com/kevingrismore/version-testing.git
     branch: main
 - prefect.deployments.steps.run_shell_script:
     id: git-checkout-commit
