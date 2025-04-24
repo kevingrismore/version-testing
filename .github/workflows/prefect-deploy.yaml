@@ -22,6 +22,7 @@ jobs:
         with:
           deployment-names: version-testing
           deployment-file-path: ./prefect.yaml
+          requirements-file-paths: ./requirements.txt
         env:
           PREFECT_API_KEY: ${{ secrets.PREFECT_API_KEY }}
           PREFECT_API_URL: ${{ secrets.PREFECT_API_URL }}
