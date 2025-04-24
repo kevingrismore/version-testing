@@ -16,7 +16,7 @@ push: null
 pull:
 - prefect.deployments.steps.git_clone:
     repository: git@github.com:kevingrismore/version-testing.git
-    branch: main
+    branch: other
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
