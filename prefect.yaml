@@ -28,7 +28,7 @@ deployments:
   entrypoint: flow.py:my_flow
   parameters: {}
   work_pool:
-    name: we
+    name: versioning
     work_queue_name: null
     job_variables: {"pip_packages": ["git+https://github.com/prefecthq/prefect.git@git-clone-commit"]}
   schedules: []
