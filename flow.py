@@ -2,8 +2,7 @@ from prefect import flow
 
 @flow(log_prints=True)
 def my_flow():
-    raise Exception("test")
-    print("Hello, world!")
+    print("Hello again, world!")
 
 if __name__ == "__main__":
     my_flow()
