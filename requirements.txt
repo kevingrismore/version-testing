@@ -1,1 +1,1 @@
-git+https://github.com/prefecthq/prefect.git@git-clone-commit
+git+https://github.com/prefecthq/prefect.git@select-commit-in-pull-step
