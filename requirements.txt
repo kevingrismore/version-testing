@@ -1,1 +1,0 @@
-git+https://github.com/prefecthq/prefect.git@select-commit-in-pull-step
