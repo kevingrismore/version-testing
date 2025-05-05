@@ -21,7 +21,7 @@ pull:
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
 - name: version-testing
-  version: 0.0.2
+  version: 0.0.1
   tags: []
   concurrency_limit: null
   description: null
